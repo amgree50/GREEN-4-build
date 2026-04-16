@@ -1,0 +1,14 @@
+/* CSS written by Ash Green */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: tan;
+    color: darkblue;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;  
+    list-style-type: none;
+}
