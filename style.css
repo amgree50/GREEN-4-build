@@ -7,17 +7,22 @@ body{
     background-color: tan;
     color: darkblue;
 }
+h1{
+    text-align: center;
+    font-family: serif;
+    font-size: calc(2rem + 3vw);
+}
 nav ul{
     display: flex;
     justify-content: space-evenly;  
     list-style-type: none;
+    font-size: calc(1rem + 1vw);
 }
 nav a{
     text-decoration: none;
     color: seashell;
     background-color: darkblue;
     padding: 1.5rem;
-    font-size: large;
     font-family: sans-serif;
 }
 .card-row{
@@ -37,8 +42,19 @@ nav a{
     }
     
 }
-@media screen and(min-width:800px) {
+@media screen and (min-width:800px){
   body{
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
   }  
+  header,nav,footer{
+    grid-column: 1 / 4;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+  }
 }
